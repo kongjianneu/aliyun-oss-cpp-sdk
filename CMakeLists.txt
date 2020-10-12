@@ -68,8 +68,8 @@ if (${TARGET_OS} STREQUAL "WINDOWS")
 	set(WLIB_TARGET "x64")
 	endif()
 	set(CRYPTO_LIBS 
-		${CMAKE_SOURCE_DIR}/third_party/lib/${WLIB_TARGET}/ssleay32.lib 
-		${CMAKE_SOURCE_DIR}/third_party/lib/${WLIB_TARGET}/libeay32.lib)
+		${CMAKE_SOURCE_DIR}/third_party/lib/${WLIB_TARGET}/libssl.lib 
+		${CMAKE_SOURCE_DIR}/third_party/lib/${WLIB_TARGET}/libcrypto.lib)
 	set(CRYPTO_INCLUDE_DIRS 
 		${CMAKE_SOURCE_DIR}/third_party/include) 
 
